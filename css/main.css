@@ -1534,7 +1534,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #1c61d2;
+  background: #1c5242;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -1665,6 +1665,9 @@ pre .javascript .function {
 .Git-info {
   display: inline-block;
 }
+.Jing-info {
+  display: inline-block;
+}
 .powered-by {
   margin-right: 10px;
 }
@@ -1676,6 +1679,13 @@ pre .javascript .function {
   margin-right: 10px;
 }
 .theme-info::after {
+  content: "|";
+  padding-left: 10px;
+}
+.Git-info {
+  margin-right: 10px;
+}
+.Git-info::after {
   content: "|";
   padding-left: 10px;
 }
