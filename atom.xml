@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://cwoei.github.io/"/>
-  <updated>2016-04-21T07:02:27.000Z</updated>
+  <updated>2016-04-21T08:14:12.557Z</updated>
   <id>http://cwoei.github.io/</id>
   
   <author>
@@ -16,35 +16,43 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="http://cwoei.github.io/2016/04/21/hello-world/"/>
-    <id>http://cwoei.github.io/2016/04/21/hello-world/</id>
-    <published>2016-04-21T02:58:11.421Z</published>
-    <updated>2016-04-21T07:02:27.000Z</updated>
+    <title>Python基础语法：一</title>
+    <link href="http://cwoei.github.io/2016/04/21/Python%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%EF%BC%9A%E4%B8%80/"/>
+    <id>http://cwoei.github.io/2016/04/21/Python基础语法：一/</id>
+    <published>2016-04-21T08:11:54.000Z</published>
+    <updated>2016-04-21T08:14:12.557Z</updated>
     
-    <content type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&quot;Create-a-new-post&quot;&gt;&lt;a href=&quot;#Create-a-new-post&quot; class=&quot;headerlink&quot; title=&quot;Create a new post&quot;&gt;&lt;/a&gt;Create a new post&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo new &lt;span class=&quot;string&quot;&gt;&quot;My New Post&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/writing.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Writing&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;Run-server&quot;&gt;&lt;a href=&quot;#Run-server&quot; class=&quot;headerlink&quot; title=&quot;Run server&quot;&gt;&lt;/a&gt;Run server&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo server&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/server.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Server&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;Generate-static-files&quot;&gt;&lt;a href=&quot;#Generate-static-files&quot; class=&quot;headerlink&quot; title=&quot;Generate static files&quot;&gt;&lt;/a&gt;Generate static files&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo generate&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/generating.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Generating&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;Deploy-to-remote-sites&quot;&gt;&lt;a href=&quot;#Deploy-to-remote-sites&quot; class=&quot;headerlink&quot; title=&quot;Deploy to remote sites&quot;&gt;&lt;/a&gt;Deploy to remote sites&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo deploy&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/deployment.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Deployment&lt;/a&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;##Python基础语法：一&lt;/p&gt;
+&lt;p&gt;###一、print()函数&lt;br&gt;    print(‘Hello World’)&lt;/p&gt;
+&lt;p&gt;###二、raw_input()函数&lt;br&gt;    name=raw_input() #输入数据&lt;br&gt;    print(‘这是手动输入的数据：’+name)&lt;/p&gt;
+&lt;p&gt;###三、format()函数&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# 5是占位,2是小数点后多少位，左右对齐取决于占位
+print(format(12.345677,&amp;apos;5.2f&amp;apos;))
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;输出结果：12.34&lt;/p&gt;
+&lt;p&gt;###三、os.system()函数&lt;br&gt;    os.system(“pause”)&lt;br&gt;执行结果：在windows下让命令行窗口暂停&lt;/p&gt;
+&lt;p&gt;###四、类型转换&lt;br&gt;    str = ‘1’&lt;br&gt;    print(int(str)+1)&lt;br&gt;输出结果：2&lt;/p&gt;
+&lt;p&gt;###五、id()函数&lt;br&gt;说明：获取变量的内存id即地址&lt;/p&gt;
+&lt;p&gt;###六、变量&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1、变量指向的是内存地址&lt;/li&gt;
+&lt;li&gt;2、变量在定义时不需要指定数据类型&lt;/li&gt;
+&lt;/ul&gt;
 </content>
     
     <summary type="html">
     
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      &lt;p&gt;##Python基础语法：一&lt;/p&gt;
+&lt;p&gt;###一、print()函数&lt;br&gt;    print(‘Hello World’)&lt;/p&gt;
+&lt;p&gt;###二、raw_input()函数&lt;br&gt;    name=raw_input() #输入数据&lt;br&gt;    print(‘这是
     
     </summary>
     
-      <category term="Diary" scheme="http://cwoei.github.io/categories/Diary/"/>
+      <category term="Python" scheme="http://cwoei.github.io/categories/Python/"/>
     
     
-      <category term="PS3" scheme="http://cwoei.github.io/tags/PS3/"/>
+      <category term="Python" scheme="http://cwoei.github.io/tags/Python/"/>
     
-      <category term="Games" scheme="http://cwoei.github.io/tags/Games/"/>
+      <category term="代码" scheme="http://cwoei.github.io/tags/%E4%BB%A3%E7%A0%81/"/>
     
   </entry>
   
