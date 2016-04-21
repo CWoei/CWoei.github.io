@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://cwoei.github.io/"/>
-  <updated>2016-04-21T08:37:58.484Z</updated>
+  <updated>2016-04-21T09:31:01.689Z</updated>
   <id>http://cwoei.github.io/</id>
   
   <author>
@@ -14,6 +14,44 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo个人博客如何进行文章发布</title>
+    <link href="http://cwoei.github.io/2016/04/21/Hexo%E5%8F%91%E5%B8%83/"/>
+    <id>http://cwoei.github.io/2016/04/21/Hexo发布/</id>
+    <published>2016-04-21T09:29:32.000Z</published>
+    <updated>2016-04-21T09:31:01.689Z</updated>
+    
+    <content type="html">&lt;h3 id=&quot;打开Git控制台程序&quot;&gt;&lt;a href=&quot;#打开Git控制台程序&quot; class=&quot;headerlink&quot; title=&quot;打开Git控制台程序&quot;&gt;&lt;/a&gt;打开Git控制台程序&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;D:\Program Files\Git\git-cmd.exe
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;进入Hexo工作目录&quot;&gt;&lt;a href=&quot;#进入Hexo工作目录&quot; class=&quot;headerlink&quot; title=&quot;进入Hexo工作目录&quot;&gt;&lt;/a&gt;进入Hexo工作目录&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;cd D:\StudyCode\CWoei.github.io
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;创建新文章&quot;&gt;&lt;a href=&quot;#创建新文章&quot; class=&quot;headerlink&quot; title=&quot;创建新文章&quot;&gt;&lt;/a&gt;创建新文章&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;hexo new post postName
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;为文章加入分类和标签&quot;&gt;&lt;a href=&quot;#为文章加入分类和标签&quot; class=&quot;headerlink&quot; title=&quot;为文章加入分类和标签&quot;&gt;&lt;/a&gt;为文章加入分类和标签&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;---
+title: about
+date: 2016-04-21 17:13:06
+categories:
+- Hexo
+tags:
+- GitHub
+- 博客
+---
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;编辑好以后使用命令生成静态文件&quot;&gt;&lt;a href=&quot;#编辑好以后使用命令生成静态文件&quot; class=&quot;headerlink&quot; title=&quot;编辑好以后使用命令生成静态文件&quot;&gt;&lt;/a&gt;编辑好以后使用命令生成静态文件&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;hexo generate
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;部署到Git&quot;&gt;&lt;a href=&quot;#部署到Git&quot; class=&quot;headerlink&quot; title=&quot;部署到Git&quot;&gt;&lt;/a&gt;部署到Git&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;hexo deploy
+&lt;/code&gt;&lt;/pre&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;打开Git控制台程序&quot;&gt;&lt;a href=&quot;#打开Git控制台程序&quot; class=&quot;headerlink&quot; title=&quot;打开Git控制台程序&quot;&gt;&lt;/a&gt;打开Git控制台程序&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;D:\Program Files\Git\git-cmd.e
+    
+    </summary>
+    
+      <category term="Hexo" scheme="http://cwoei.github.io/categories/Hexo/"/>
+    
+    
+      <category term="Hexo" scheme="http://cwoei.github.io/tags/Hexo/"/>
+    
+      <category term="博客" scheme="http://cwoei.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
   
   <entry>
     <title>Python基础语法：一</title>
