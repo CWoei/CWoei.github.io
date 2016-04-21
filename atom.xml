@@ -4,9 +4,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://cwoei.github.io/"/>
+  <link href="http://share18.cc/"/>
   <updated>2016-04-21T09:31:01.689Z</updated>
-  <id>http://cwoei.github.io/</id>
+  <id>http://share18.cc/</id>
   
   <author>
     <name>WoeiTsai</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>Hexo个人博客如何进行文章发布</title>
-    <link href="http://cwoei.github.io/2016/04/21/Hexo%E5%8F%91%E5%B8%83/"/>
-    <id>http://cwoei.github.io/2016/04/21/Hexo发布/</id>
+    <link href="http://share18.cc/2016/04/21/Hexo%E5%8F%91%E5%B8%83/"/>
+    <id>http://share18.cc/2016/04/21/Hexo发布/</id>
     <published>2016-04-21T09:29:32.000Z</published>
     <updated>2016-04-21T09:31:01.689Z</updated>
     
@@ -44,19 +44,19 @@ tags:
     
     </summary>
     
-      <category term="Hexo" scheme="http://cwoei.github.io/categories/Hexo/"/>
+      <category term="Hexo" scheme="http://share18.cc/categories/Hexo/"/>
     
     
-      <category term="Hexo" scheme="http://cwoei.github.io/tags/Hexo/"/>
+      <category term="Hexo" scheme="http://share18.cc/tags/Hexo/"/>
     
-      <category term="博客" scheme="http://cwoei.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
+      <category term="博客" scheme="http://share18.cc/tags/%E5%8D%9A%E5%AE%A2/"/>
     
   </entry>
   
   <entry>
     <title>Python基础语法：一</title>
-    <link href="http://cwoei.github.io/2016/04/21/Python%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%EF%BC%9A%E4%B8%80/"/>
-    <id>http://cwoei.github.io/2016/04/21/Python基础语法：一/</id>
+    <link href="http://share18.cc/2016/04/21/Python%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%EF%BC%9A%E4%B8%80/"/>
+    <id>http://share18.cc/2016/04/21/Python基础语法：一/</id>
     <published>2016-04-21T08:11:54.000Z</published>
     <updated>2016-04-21T08:37:58.484Z</updated>
     
@@ -85,12 +85,12 @@ print(int(str)+1)
     
     </summary>
     
-      <category term="Python" scheme="http://cwoei.github.io/categories/Python/"/>
+      <category term="Python" scheme="http://share18.cc/categories/Python/"/>
     
     
-      <category term="Python" scheme="http://cwoei.github.io/tags/Python/"/>
+      <category term="Python" scheme="http://share18.cc/tags/Python/"/>
     
-      <category term="代码" scheme="http://cwoei.github.io/tags/%E4%BB%A3%E7%A0%81/"/>
+      <category term="代码" scheme="http://share18.cc/tags/%E4%BB%A3%E7%A0%81/"/>
     
   </entry>
   
