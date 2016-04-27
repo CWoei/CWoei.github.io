@@ -54,11 +54,19 @@ tags:
   </entry>
   
   <entry>
+<<<<<<< HEAD
     <title>Python基础语法一：基本函数</title>
     <link href="http://share18.cc/2016/04/21/Python%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%EF%BC%9A%E4%B8%80/"/>
     <id>http://share18.cc/2016/04/21/Python基础语法：一/</id>
     <published>2016-04-21T08:11:54.000Z</published>
     <updated>2016-04-27T02:41:23.731Z</updated>
+=======
+    <title>Python基础语法：一</title>
+    <link href="http://share18.cc/2016/04/21/Python%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%EF%BC%9A%E4%B8%80/"/>
+    <id>http://share18.cc/2016/04/21/Python基础语法：一/</id>
+    <published>2016-04-21T08:11:54.000Z</published>
+    <updated>2016-04-21T08:37:58.484Z</updated>
+>>>>>>> 47c7dabdfdc8f57db12028c0e7eacd9eda71ca77
     
     <content type="html">&lt;h3 id=&quot;print-函数&quot;&gt;&lt;a href=&quot;#print-函数&quot; class=&quot;headerlink&quot; title=&quot;print()函数&quot;&gt;&lt;/a&gt;print()函数&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;print(&amp;apos;Hello World&amp;apos;)
 &lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;raw-input-函数&quot;&gt;&lt;a href=&quot;#raw-input-函数&quot; class=&quot;headerlink&quot; title=&quot;raw_input()函数&quot;&gt;&lt;/a&gt;raw_input()函数&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;name=raw_input() #输入数据
