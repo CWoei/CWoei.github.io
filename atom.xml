@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Share`18℃</title>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://share18.cc/"/>
+  <updated>2016-04-21T09:31:01.689Z</updated>
+  <id>http://share18.cc/</id>
+  
+  <author>
+    <name>WoeiTsai</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo个人博客如何进行文章发布</title>
+    <link href="http://share18.cc/2016/04/21/Hexo%E5%8F%91%E5%B8%83/"/>
+    <id>http://share18.cc/2016/04/21/Hexo发布/</id>
+    <published>2016-04-21T09:29:32.000Z</published>
+    <updated>2016-04-21T09:31:01.689Z</updated>
+    
+    <content type="html">&lt;h3 id=&quot;打开Git控制台程序&quot;&gt;&lt;a href=&quot;#打开Git控制台程序&quot; class=&quot;headerlink&quot; title=&quot;打开Git控制台程序&quot;&gt;&lt;/a&gt;打开Git控制台程序&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;D:\Program Files\Git\git-cmd.exe
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;进入Hexo工作目录&quot;&gt;&lt;a href=&quot;#进入Hexo工作目录&quot; class=&quot;headerlink&quot; title=&quot;进入Hexo工作目录&quot;&gt;&lt;/a&gt;进入Hexo工作目录&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;cd D:\StudyCode\CWoei.github.io
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;创建新文章&quot;&gt;&lt;a href=&quot;#创建新文章&quot; class=&quot;headerlink&quot; title=&quot;创建新文章&quot;&gt;&lt;/a&gt;创建新文章&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;hexo new post postName
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;为文章加入分类和标签&quot;&gt;&lt;a href=&quot;#为文章加入分类和标签&quot; class=&quot;headerlink&quot; title=&quot;为文章加入分类和标签&quot;&gt;&lt;/a&gt;为文章加入分类和标签&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;---
+title: about
+date: 2016-04-21 17:13:06
+categories:
+- Hexo
+tags:
+- GitHub
+- 博客
+---
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;编辑好以后使用命令生成静态文件&quot;&gt;&lt;a href=&quot;#编辑好以后使用命令生成静态文件&quot; class=&quot;headerlink&quot; title=&quot;编辑好以后使用命令生成静态文件&quot;&gt;&lt;/a&gt;编辑好以后使用命令生成静态文件&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;hexo generate
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;部署到Git&quot;&gt;&lt;a href=&quot;#部署到Git&quot; class=&quot;headerlink&quot; title=&quot;部署到Git&quot;&gt;&lt;/a&gt;部署到Git&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;hexo deploy
+&lt;/code&gt;&lt;/pre&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;打开Git控制台程序&quot;&gt;&lt;a href=&quot;#打开Git控制台程序&quot; class=&quot;headerlink&quot; title=&quot;打开Git控制台程序&quot;&gt;&lt;/a&gt;打开Git控制台程序&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;D:\Program Files\Git\git-cmd.e
+    
+    </summary>
+    
+      <category term="Hexo" scheme="http://share18.cc/categories/Hexo/"/>
+    
+    
+      <category term="Hexo" scheme="http://share18.cc/tags/Hexo/"/>
+    
+      <category term="博客" scheme="http://share18.cc/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python基础语法一：基本函数</title>
+    <link href="http://share18.cc/2016/04/21/Python%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%EF%BC%9A%E4%B8%80/"/>
+    <id>http://share18.cc/2016/04/21/Python基础语法：一/</id>
+    <published>2016-04-21T08:11:54.000Z</published>
+    <updated>2016-04-27T02:41:23.731Z</updated>
+    
+    <content type="html">&lt;h3 id=&quot;print-函数&quot;&gt;&lt;a href=&quot;#print-函数&quot; class=&quot;headerlink&quot; title=&quot;print()函数&quot;&gt;&lt;/a&gt;print()函数&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;print(&amp;apos;Hello World&amp;apos;)
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;raw-input-函数&quot;&gt;&lt;a href=&quot;#raw-input-函数&quot; class=&quot;headerlink&quot; title=&quot;raw_input()函数&quot;&gt;&lt;/a&gt;raw_input()函数&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;name=raw_input() #输入数据
+print(&amp;apos;这是手动输入的数据：&amp;apos;+name)
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;format-函数&quot;&gt;&lt;a href=&quot;#format-函数&quot; class=&quot;headerlink&quot; title=&quot;format()函数&quot;&gt;&lt;/a&gt;format()函数&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;# 5是占位,2是小数点后多少位，左右对齐取决于占位
+print(format(12.345677,&amp;apos;5.2f&amp;apos;))
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;输出结果：12.34&lt;/p&gt;
+&lt;h3 id=&quot;os-system-函数&quot;&gt;&lt;a href=&quot;#os-system-函数&quot; class=&quot;headerlink&quot; title=&quot;os.system()函数&quot;&gt;&lt;/a&gt;os.system()函数&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;os.system(&amp;quot;pause&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;执行结果：在windows下让命令行窗口暂停&lt;/p&gt;
+&lt;h3 id=&quot;类型转换&quot;&gt;&lt;a href=&quot;#类型转换&quot; class=&quot;headerlink&quot; title=&quot;类型转换&quot;&gt;&lt;/a&gt;类型转换&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;str = &amp;apos;1&amp;apos;
+print(int(str)+1)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;输出结果：2&lt;/p&gt;
+&lt;h3 id=&quot;id-函数&quot;&gt;&lt;a href=&quot;#id-函数&quot; class=&quot;headerlink&quot; title=&quot;id()函数&quot;&gt;&lt;/a&gt;id()函数&lt;/h3&gt;&lt;p&gt;说明：获取变量的内存id即地址&lt;/p&gt;
+&lt;h3 id=&quot;变量&quot;&gt;&lt;a href=&quot;#变量&quot; class=&quot;headerlink&quot; title=&quot;变量&quot;&gt;&lt;/a&gt;变量&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;1、变量指向的是内存地址&lt;/li&gt;
+&lt;li&gt;2、变量在定义时不需要指定数据类型&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;print-函数&quot;&gt;&lt;a href=&quot;#print-函数&quot; class=&quot;headerlink&quot; title=&quot;print()函数&quot;&gt;&lt;/a&gt;print()函数&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;print(&amp;apos;Hello World&amp;apos;)
+&lt;/cod
+    
+    </summary>
+    
+      <category term="Python" scheme="http://share18.cc/categories/Python/"/>
+    
+    
+      <category term="Python" scheme="http://share18.cc/tags/Python/"/>
+    
+      <category term="代码" scheme="http://share18.cc/tags/%E4%BB%A3%E7%A0%81/"/>
+    
+  </entry>
+  
+</feed>
