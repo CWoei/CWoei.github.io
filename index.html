@@ -289,6 +289,202 @@
             
               
                 
+                <a class="post-title-link" href="/2016/04/27/Python基础语法：二/" itemprop="url">
+                  Python基础语法二：条件选择与循环语句
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-04-27T16:11:54+08:00" content="2016-04-27">
+              2016-04-27
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Python/" itemprop="url" rel="index">
+                    <span itemprop="name">Python</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/04/27/Python基础语法：二/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/04/27/Python基础语法：二/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="条件选择"><a href="#条件选择" class="headerlink" title="条件选择"></a>条件选择</h3><ul>
+<li>if语句</li>
+</ul>
+<pre><code>i = 1
+if i &gt; 0 :
+    print &apos;i大于0&apos; 
+</code></pre><ul>
+<li>if else语句</li>
+</ul>
+<pre><code>i = 2
+if i &gt; 0 :
+    print &apos;i大于0&apos;
+else :
+    print &apos;i小于0&apos;
+</code></pre><ul>
+<li>if elif语句</li>
+</ul>
+<pre><code>i = 3             
+if i == 4 :       
+    print &apos;i等于4&apos;  
+elif i == 3 :     
+    print &apos;i等于3&apos;  
+elif i == 2 :     
+    print &apos;i等于2&apos;  
+</code></pre><h3 id="循环语句"><a href="#循环语句" class="headerlink" title="循环语句"></a>循环语句</h3><ul>
+<li>for…in</li>
+</ul>
+<pre><code>code1：
+for test in &apos;love&apos; :      
+    print &apos;当前字母：&apos; , test 
+
+code2：
+num = [&apos;1&apos;,&apos;3&apos;,&apos;5&apos;,&apos;7&apos;]         
+for index in range(len(num)):   
+    print &apos;当前数字：&apos; , num[index]  
+</code></pre><p>输出结果：<br>当前字母： l<br>当前字母： o<br>当前字母： v<br>当前字母： e </p>
+<ul>
+<li>while语句</li>
+</ul>
+<pre><code>i = 3                   
+while (i &lt; 30):         
+    i = i+1             
+else:                   
+    print &apos;跳出循环时的数字：&apos;,i     
+</code></pre><p>输出结果：30</p>
+<ul>
+<li>while中的continue</li>
+</ul>
+<pre><code>i = 1            
+while (i &lt; 10):  
+       i = i+1      
+    if i%2 &lt;&gt; 0: 
+        continue 
+    else:        
+        print i  
+</code></pre><p>输出结果：2 4 6 8 </p>
+<ul>
+<li>while中的break</li>
+</ul>
+<pre><code>i = 0                        
+while (i &lt; 5):               
+    i += 1                   
+    if i &gt; 3:                
+        print &apos;大于3跳出，此时i=&apos;,i 
+        break                
+    else:                    
+        print &apos;打印小于等于3的数：&apos;,i 
+</code></pre><p>输出结果：<br>打印小于等于3的数： 1<br>打印小于等于3的数： 2<br>打印小于等于3的数： 3<br>大于3跳出，此时i= 4</p>
+<ul>
+<li>pass语句<br>Python pass是空语句，是为了保持程序结构的完整性。<br>pass 不做任何事情，一般用做占位语句。</li>
+</ul>
+<pre><code>for i in range(1,10):                              
+if i == 5 :                                    
+    pass                                       
+    print&apos;卧槽pass语句块下面是5吧，没事继续往下打印&apos;             
+print i                                        
+</code></pre><p>输出结果：<br>1<br>2<br>3<br>4<br>卧槽pass语句块下面是5吧，没事继续往下打印<br>5<br>6<br>7<br>8<br>9</p>
+
+          
+        
+      
+    </div>
+    
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/04/22/Python基础语法：一/" itemprop="url">
                   Python基础语法一：基本函数
                 </a>
@@ -371,6 +567,7 @@ print(format(12.345677,&apos;5.2f&apos;))
 print(int(str)+1)
 </code></pre><p>输出结果：2</p>
 <h3 id="id-函数"><a href="#id-函数" class="headerlink" title="id()函数"></a>id()函数</h3><p>说明：获取变量的内存id即地址</p>
+<h3 id="range-函数"><a href="#range-函数" class="headerlink" title="range()函数"></a>range()函数</h3><p>range()是一个内置函数，它可以生成某个范围内的数字列表。<br>比如说range(1,6)就会生成[1,2,3,4,5]这样一个列表，而range(8)会生成[0,1,2,3,4,5,6,7]这样一个列表。</p>
 <h3 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h3><ul>
 <li>1、变量指向的是内存地址</li>
 <li>2、变量在定义时不需要指定数据类型</li>
@@ -577,7 +774,7 @@ tags:
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/">
-              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-count">3</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>

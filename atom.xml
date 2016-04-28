@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://share18.cc/"/>
-  <updated>2016-04-27T02:55:25.834Z</updated>
+  <updated>2016-04-28T15:04:41.829Z</updated>
   <id>http://share18.cc/</id>
   
   <author>
@@ -16,11 +16,117 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Python基础语法二：条件选择与循环语句</title>
+    <link href="http://share18.cc/2016/04/27/Python%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%EF%BC%9A%E4%BA%8C/"/>
+    <id>http://share18.cc/2016/04/27/Python基础语法：二/</id>
+    <published>2016-04-27T08:11:54.000Z</published>
+    <updated>2016-04-28T15:04:41.829Z</updated>
+    
+    <content type="html">&lt;h3 id=&quot;条件选择&quot;&gt;&lt;a href=&quot;#条件选择&quot; class=&quot;headerlink&quot; title=&quot;条件选择&quot;&gt;&lt;/a&gt;条件选择&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;if语句&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;i = 1
+if i &amp;gt; 0 :
+    print &amp;apos;i大于0&amp;apos; 
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;if else语句&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;i = 2
+if i &amp;gt; 0 :
+    print &amp;apos;i大于0&amp;apos;
+else :
+    print &amp;apos;i小于0&amp;apos;
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;if elif语句&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;i = 3             
+if i == 4 :       
+    print &amp;apos;i等于4&amp;apos;  
+elif i == 3 :     
+    print &amp;apos;i等于3&amp;apos;  
+elif i == 2 :     
+    print &amp;apos;i等于2&amp;apos;  
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;循环语句&quot;&gt;&lt;a href=&quot;#循环语句&quot; class=&quot;headerlink&quot; title=&quot;循环语句&quot;&gt;&lt;/a&gt;循环语句&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;for…in&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;code1：
+for test in &amp;apos;love&amp;apos; :      
+    print &amp;apos;当前字母：&amp;apos; , test 
+
+code2：
+num = [&amp;apos;1&amp;apos;,&amp;apos;3&amp;apos;,&amp;apos;5&amp;apos;,&amp;apos;7&amp;apos;]         
+for index in range(len(num)):   
+    print &amp;apos;当前数字：&amp;apos; , num[index]  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;输出结果：&lt;br&gt;当前字母： l&lt;br&gt;当前字母： o&lt;br&gt;当前字母： v&lt;br&gt;当前字母： e &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;while语句&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;i = 3                   
+while (i &amp;lt; 30):         
+    i = i+1             
+else:                   
+    print &amp;apos;跳出循环时的数字：&amp;apos;,i     
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;输出结果：30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;while中的continue&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;i = 1            
+while (i &amp;lt; 10):  
+       i = i+1      
+    if i%2 &amp;lt;&amp;gt; 0: 
+        continue 
+    else:        
+        print i  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;输出结果：2 4 6 8 &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;while中的break&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;i = 0                        
+while (i &amp;lt; 5):               
+    i += 1                   
+    if i &amp;gt; 3:                
+        print &amp;apos;大于3跳出，此时i=&amp;apos;,i 
+        break                
+    else:                    
+        print &amp;apos;打印小于等于3的数：&amp;apos;,i 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;输出结果：&lt;br&gt;打印小于等于3的数： 1&lt;br&gt;打印小于等于3的数： 2&lt;br&gt;打印小于等于3的数： 3&lt;br&gt;大于3跳出，此时i= 4&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;pass语句&lt;br&gt;Python pass是空语句，是为了保持程序结构的完整性。&lt;br&gt;pass 不做任何事情，一般用做占位语句。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;for i in range(1,10):                              
+if i == 5 :                                    
+    pass                                       
+    print&amp;apos;卧槽pass语句块下面是5吧，没事继续往下打印&amp;apos;             
+print i                                        
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;输出结果：&lt;br&gt;1&lt;br&gt;2&lt;br&gt;3&lt;br&gt;4&lt;br&gt;卧槽pass语句块下面是5吧，没事继续往下打印&lt;br&gt;5&lt;br&gt;6&lt;br&gt;7&lt;br&gt;8&lt;br&gt;9&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;条件选择&quot;&gt;&lt;a href=&quot;#条件选择&quot; class=&quot;headerlink&quot; title=&quot;条件选择&quot;&gt;&lt;/a&gt;条件选择&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;if语句&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;i = 1
+if i &amp;gt; 0 :
+    print
+    
+    </summary>
+    
+      <category term="Python" scheme="http://share18.cc/categories/Python/"/>
+    
+    
+      <category term="Python" scheme="http://share18.cc/tags/Python/"/>
+    
+      <category term="代码" scheme="http://share18.cc/tags/%E4%BB%A3%E7%A0%81/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Python基础语法一：基本函数</title>
     <link href="http://share18.cc/2016/04/22/Python%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%EF%BC%9A%E4%B8%80/"/>
     <id>http://share18.cc/2016/04/22/Python基础语法：一/</id>
     <published>2016-04-22T08:11:54.000Z</published>
-    <updated>2016-04-27T02:55:25.834Z</updated>
+    <updated>2016-04-27T09:46:22.485Z</updated>
     
     <content type="html">&lt;h3 id=&quot;print-函数&quot;&gt;&lt;a href=&quot;#print-函数&quot; class=&quot;headerlink&quot; title=&quot;print()函数&quot;&gt;&lt;/a&gt;print()函数&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;print(&amp;apos;Hello World&amp;apos;)
 &lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;raw-input-函数&quot;&gt;&lt;a href=&quot;#raw-input-函数&quot; class=&quot;headerlink&quot; title=&quot;raw_input()函数&quot;&gt;&lt;/a&gt;raw_input()函数&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;name=raw_input() #输入数据
@@ -34,6 +140,7 @@ print(format(12.345677,&amp;apos;5.2f&amp;apos;))
 print(int(str)+1)
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;输出结果：2&lt;/p&gt;
 &lt;h3 id=&quot;id-函数&quot;&gt;&lt;a href=&quot;#id-函数&quot; class=&quot;headerlink&quot; title=&quot;id()函数&quot;&gt;&lt;/a&gt;id()函数&lt;/h3&gt;&lt;p&gt;说明：获取变量的内存id即地址&lt;/p&gt;
+&lt;h3 id=&quot;range-函数&quot;&gt;&lt;a href=&quot;#range-函数&quot; class=&quot;headerlink&quot; title=&quot;range()函数&quot;&gt;&lt;/a&gt;range()函数&lt;/h3&gt;&lt;p&gt;range()是一个内置函数，它可以生成某个范围内的数字列表。&lt;br&gt;比如说range(1,6)就会生成[1,2,3,4,5]这样一个列表，而range(8)会生成[0,1,2,3,4,5,6,7]这样一个列表。&lt;/p&gt;
 &lt;h3 id=&quot;变量&quot;&gt;&lt;a href=&quot;#变量&quot; class=&quot;headerlink&quot; title=&quot;变量&quot;&gt;&lt;/a&gt;变量&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;1、变量指向的是内存地址&lt;/li&gt;
 &lt;li&gt;2、变量在定义时不需要指定数据类型&lt;/li&gt;
