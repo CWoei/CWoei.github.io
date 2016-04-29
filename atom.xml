@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://share18.cc/"/>
-  <updated>2016-04-28T15:54:06.405Z</updated>
+  <updated>2016-04-29T02:46:42.441Z</updated>
   <id>http://share18.cc/</id>
   
   <author>
@@ -14,6 +14,82 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Python基础语法三：变量引用思想</title>
+    <link href="http://share18.cc/2016/04/29/Python%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%EF%BC%9A%E4%B8%89/"/>
+    <id>http://share18.cc/2016/04/29/Python基础语法：三/</id>
+    <published>2016-04-29T08:11:54.000Z</published>
+    <updated>2016-04-29T02:46:42.441Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h2&gt;&lt;p&gt;在Python并没有什么指针的概念，不同变量的引用都是指向开辟好的内存。&lt;br&gt;如果你要将a = 1这个变量初始化，那么就会在内存中开辟一块空间给1，接着再将a = 2这个变量初始话，Python并不会把之前的1这个变量内存空间占用，而是会重新开辟一个a = 2的内存空间，那么问题就来了，如果在开辟一个b = 1的变量那么b会指向哪块内存呢？还是新开辟一块内存呢？&lt;br&gt;答案是仍然使用已经开辟好的1内存空间，也就是说1的内存空间被多个变量引用了，这就是Python的变量引用思想，那么我们来用程序验证下最终结果看看。&lt;/p&gt;
+&lt;h2 id=&quot;程序验证&quot;&gt;&lt;a href=&quot;#程序验证&quot; class=&quot;headerlink&quot; title=&quot;程序验证&quot;&gt;&lt;/a&gt;程序验证&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;i = 0
+n = 3
+m = 0
+if id(i) &amp;lt;&amp;gt; id(n):
+print &amp;apos;i和n的内存地址不相同，i：&amp;apos;,id(i),&amp;apos;n:&amp;apos;,id(n)
+if id(i) == id(m):
+print &amp;apos;i和m的内存地址相同，i：&amp;apos;,id(i),&amp;apos;m:&amp;apos;,id(m)
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;p&gt;输出结果：&lt;br&gt;i和n的内存地址不相同，i： 44398980 n: 44398944&lt;br&gt;i和m的内存地址相同，i： 44398980 m: 44398980&lt;/p&gt;
+&lt;p&gt;由结果可以看出同时为0的i和m的内存地址是一样的，也就是说都指向的一同一块内存，可以这么理解，i和m就像是同一个商品中的标签i标签和m标签，那么我们再来验证下，如果把某个标签撕掉，分配的内存会消失吗？&lt;/p&gt;
+&lt;hr&gt;
+&lt;pre&gt;&lt;code&gt;i = 0
+n = 3
+m = 0
+if id(i) &amp;lt;&amp;gt; id(n):
+    print &amp;apos;i和n的内存地址不相同，i：&amp;apos;,id(i),&amp;apos;n:&amp;apos;,id(n)
+if id(i) == id(m):
+    print &amp;apos;i和m的内存地址相同，i：&amp;apos;,id(i),&amp;apos;m:&amp;apos;,id(m)
+del i
+print &amp;apos;m的内存地址:&amp;apos;,id(m)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;输出结果：&lt;br&gt;i和n的内存地址不相同，i： 22509956 n: 22509920&lt;br&gt;i和m的内存地址相同，i： 22509956 m: 22509956&lt;br&gt;m的内存地址: 22509956&lt;/p&gt;
+&lt;p&gt;可见撕掉m的标签内存还在，不存在消失的情况。&lt;br&gt;那么问题又来的，卧槽什么时候内存会被回收呢？java有回收机制Python有吗？答案是肯定的，只是回收机制不一样罢了。&lt;/p&gt;
+&lt;h2 id=&quot;Python的内存回收机制&quot;&gt;&lt;a href=&quot;#Python的内存回收机制&quot; class=&quot;headerlink&quot; title=&quot;Python的内存回收机制&quot;&gt;&lt;/a&gt;Python的内存回收机制&lt;/h2&gt;&lt;p&gt;简单来说python里回收机制是以引用计数为主，标记-清除和分代收集两种机制为辅，下面主要说下计数。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;python里每一个东西都是对象，它们的核心就是一个结构体：PyObject，PyObject是每个对象必有的内容，其中ob_refcnt就是做为引用计数。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;typedef struct_object {    
+    int ob_refcnt;    
+    struct_typeobject *ob_type;
+}PyObject;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;当一个对象有新的引用时，它的ob_refcnt就会增加，当引用它的对象被删除，它的ob_refcnt就会减少。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#define Py_INCREF(op)   ((op)-&amp;gt;ob_refcnt++)      //增加计数
+#define Py_DECREF(op)      \                     //减少计数       
+     if (--(op)-&amp;gt;ob_refcnt != 0)    
+         ;
+     else
+         __Py_Dealloc((PyObject *)(op))
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;引用计数为0时，该对象生命就结束了。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;引用计数机制的优点 &lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;简单&lt;/li&gt;
+&lt;li&gt;实时性：一旦没有引用，内存就直接释放了。不用像其他机制等到特定时机。实时性还带来一个好处：处理回收内存的时间分摊到了平时。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;引用计数机制的缺点&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;维护引用计数消耗资源 &lt;/li&gt;
+&lt;li&gt;循环引用 &lt;/li&gt;
+&lt;/ol&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h2&gt;&lt;p&gt;在Python并没有什么指针的概念，不同变量的引用都是指向开辟好的内存。&lt;br&gt;如果你要将a = 1这个变量初始化，那么就会在内存中开辟一块
+    
+    </summary>
+    
+      <category term="Python" scheme="http://share18.cc/categories/Python/"/>
+    
+    
+      <category term="Python" scheme="http://share18.cc/tags/Python/"/>
+    
+      <category term="代码" scheme="http://share18.cc/tags/%E4%BB%A3%E7%A0%81/"/>
+    
+  </entry>
   
   <entry>
     <title>古典古籍研究：《搜神祕覽-船山藏》</title>

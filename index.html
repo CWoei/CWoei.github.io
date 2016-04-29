@@ -289,6 +289,177 @@
             
               
                 
+                <a class="post-title-link" href="/2016/04/29/Python基础语法：三/" itemprop="url">
+                  Python基础语法三：变量引用思想
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-04-29T16:11:54+08:00" content="2016-04-29">
+              2016-04-29
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Python/" itemprop="url" rel="index">
+                    <span itemprop="name">Python</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/04/29/Python基础语法：三/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/04/29/Python基础语法：三/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>在Python并没有什么指针的概念，不同变量的引用都是指向开辟好的内存。<br>如果你要将a = 1这个变量初始化，那么就会在内存中开辟一块空间给1，接着再将a = 2这个变量初始话，Python并不会把之前的1这个变量内存空间占用，而是会重新开辟一个a = 2的内存空间，那么问题就来了，如果在开辟一个b = 1的变量那么b会指向哪块内存呢？还是新开辟一块内存呢？<br>答案是仍然使用已经开辟好的1内存空间，也就是说1的内存空间被多个变量引用了，这就是Python的变量引用思想，那么我们来用程序验证下最终结果看看。</p>
+<h2 id="程序验证"><a href="#程序验证" class="headerlink" title="程序验证"></a>程序验证</h2><pre><code>i = 0
+n = 3
+m = 0
+if id(i) &lt;&gt; id(n):
+print &apos;i和n的内存地址不相同，i：&apos;,id(i),&apos;n:&apos;,id(n)
+if id(i) == id(m):
+print &apos;i和m的内存地址相同，i：&apos;,id(i),&apos;m:&apos;,id(m)
+</code></pre><hr>
+<p>输出结果：<br>i和n的内存地址不相同，i： 44398980 n: 44398944<br>i和m的内存地址相同，i： 44398980 m: 44398980</p>
+<p>由结果可以看出同时为0的i和m的内存地址是一样的，也就是说都指向的一同一块内存，可以这么理解，i和m就像是同一个商品中的标签i标签和m标签，那么我们再来验证下，如果把某个标签撕掉，分配的内存会消失吗？</p>
+<hr>
+<pre><code>i = 0
+n = 3
+m = 0
+if id(i) &lt;&gt; id(n):
+    print &apos;i和n的内存地址不相同，i：&apos;,id(i),&apos;n:&apos;,id(n)
+if id(i) == id(m):
+    print &apos;i和m的内存地址相同，i：&apos;,id(i),&apos;m:&apos;,id(m)
+del i
+print &apos;m的内存地址:&apos;,id(m)
+</code></pre><p>输出结果：<br>i和n的内存地址不相同，i： 22509956 n: 22509920<br>i和m的内存地址相同，i： 22509956 m: 22509956<br>m的内存地址: 22509956</p>
+<p>可见撕掉m的标签内存还在，不存在消失的情况。<br>那么问题又来的，卧槽什么时候内存会被回收呢？java有回收机制Python有吗？答案是肯定的，只是回收机制不一样罢了。</p>
+<h2 id="Python的内存回收机制"><a href="#Python的内存回收机制" class="headerlink" title="Python的内存回收机制"></a>Python的内存回收机制</h2><p>简单来说python里回收机制是以引用计数为主，标记-清除和分代收集两种机制为辅，下面主要说下计数。</p>
+<hr>
+<p>python里每一个东西都是对象，它们的核心就是一个结构体：PyObject，PyObject是每个对象必有的内容，其中ob_refcnt就是做为引用计数。</p>
+<pre><code>typedef struct_object {    
+    int ob_refcnt;    
+    struct_typeobject *ob_type;
+}PyObject;
+</code></pre><p>当一个对象有新的引用时，它的ob_refcnt就会增加，当引用它的对象被删除，它的ob_refcnt就会减少。</p>
+<pre><code>#define Py_INCREF(op)   ((op)-&gt;ob_refcnt++)      //增加计数
+#define Py_DECREF(op)      \                     //减少计数       
+     if (--(op)-&gt;ob_refcnt != 0)    
+         ;
+     else
+         __Py_Dealloc((PyObject *)(op))
+</code></pre><p>引用计数为0时，该对象生命就结束了。</p>
+<ul>
+<li>引用计数机制的优点 </li>
+</ul>
+<ol>
+<li>简单</li>
+<li>实时性：一旦没有引用，内存就直接释放了。不用像其他机制等到特定时机。实时性还带来一个好处：处理回收内存的时间分摊到了平时。</li>
+</ol>
+<ul>
+<li>引用计数机制的缺点</li>
+</ul>
+<ol>
+<li>维护引用计数消耗资源 </li>
+<li>循环引用 </li>
+</ol>
+
+          
+        
+      
+    </div>
+    
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/04/28/古典古籍研究：一/" itemprop="url">
                   古典古籍研究：《搜神祕覽-船山藏》
                 </a>
@@ -897,7 +1068,7 @@ tags:
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/">
-              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-count">5</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
