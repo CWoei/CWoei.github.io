@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://share18.cc/"/>
-  <updated>2016-04-29T02:46:42.441Z</updated>
+  <updated>2016-04-29T03:02:39.323Z</updated>
   <id>http://share18.cc/</id>
   
   <author>
@@ -20,9 +20,9 @@
     <link href="http://share18.cc/2016/04/29/Python%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%EF%BC%9A%E4%B8%89/"/>
     <id>http://share18.cc/2016/04/29/Python基础语法：三/</id>
     <published>2016-04-29T08:11:54.000Z</published>
-    <updated>2016-04-29T02:46:42.441Z</updated>
+    <updated>2016-04-29T03:02:39.323Z</updated>
     
-    <content type="html">&lt;h2 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h2&gt;&lt;p&gt;在Python并没有什么指针的概念，不同变量的引用都是指向开辟好的内存。&lt;br&gt;如果你要将a = 1这个变量初始化，那么就会在内存中开辟一块空间给1，接着再将a = 2这个变量初始话，Python并不会把之前的1这个变量内存空间占用，而是会重新开辟一个a = 2的内存空间，那么问题就来了，如果在开辟一个b = 1的变量那么b会指向哪块内存呢？还是新开辟一块内存呢？&lt;br&gt;答案是仍然使用已经开辟好的1内存空间，也就是说1的内存空间被多个变量引用了，这就是Python的变量引用思想，那么我们来用程序验证下最终结果看看。&lt;/p&gt;
+    <content type="html">&lt;h2 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h2&gt;&lt;p&gt;在Python并没有什么指针的概念，不同变量的引用都是指向开辟好的内存(注：Python事实上实现了自己的内存分配系统，它在操作系统内存堆上提供了另外一层抽象）。&lt;br&gt;如果你要将a = 1这个变量初始化，那么就会在内存中开辟一块空间给1，接着再将a = 2这个变量初始话，Python并不会把之前的1这个变量内存空间占用，而是会重新开辟一个a = 2的内存空间，那么问题就来了，如果在开辟一个b = 1的变量那么b会指向哪块内存呢？还是新开辟一块内存呢？&lt;br&gt;答案是仍然使用已经开辟好的1内存空间，也就是说1的内存空间被多个变量引用了，这就是Python的变量引用思想，那么我们来用程序验证下最终结果看看。&lt;/p&gt;
 &lt;h2 id=&quot;程序验证&quot;&gt;&lt;a href=&quot;#程序验证&quot; class=&quot;headerlink&quot; title=&quot;程序验证&quot;&gt;&lt;/a&gt;程序验证&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;i = 0
 n = 3
 m = 0
@@ -74,11 +74,12 @@ print &amp;apos;m的内存地址:&amp;apos;,id(m)
 &lt;li&gt;维护引用计数消耗资源 &lt;/li&gt;
 &lt;li&gt;循环引用 &lt;/li&gt;
 &lt;/ol&gt;
+&lt;h2 id=&quot;总结&quot;&gt;&lt;a href=&quot;#总结&quot; class=&quot;headerlink&quot; title=&quot;总结&quot;&gt;&lt;/a&gt;总结&lt;/h2&gt;&lt;p&gt;Python在科学计算和数据处理中用途广泛，而深入底层那些基础理念和算法，都应该感激那些六七十年代由麦卡锡等计算机先贤所作出的计算机科学开创性研究吧！&lt;/p&gt;
 </content>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h2&gt;&lt;p&gt;在Python并没有什么指针的概念，不同变量的引用都是指向开辟好的内存。&lt;br&gt;如果你要将a = 1这个变量初始化，那么就会在内存中开辟一块
+      &lt;h2 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h2&gt;&lt;p&gt;在Python并没有什么指针的概念，不同变量的引用都是指向开辟好的内存(注：Python事实上实现了自己的内存分配系统，它在操作系统内存堆上
     
     </summary>
     
