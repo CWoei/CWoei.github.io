@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[信仰：静修日的默想]]></title>
+    <url>%2F2018%2F03%2F30%2FFaith%E9%9D%99%E4%BF%AE%E6%97%A5%E9%BB%98%E6%83%B3%EF%BC%9A%E4%B8%80%2F</url>
+    <content type="text"><![CDATA[静修日受难周的第四日被称为静修日，在福音书里，没有详细的经文记述耶稣这一天在哪里，做了什么事情？因为人的好奇心，这是一个会更加被人猜想的的事件，耶稣在这天到底去了哪里？做了什么事情？有资料记载耶稣是去了距离耶路撒冷附近的伯大尼村，福音书中也常有描述耶稣在伯大尼。 有一个患病的人，名叫拉撒路，住在伯大尼，就是马利亚和她姐姐马大的村庄。 (约翰福音 11:1 和合本) 逾越节前六日，耶稣来到伯大尼，就是他叫拉撒路从死里复活之处。 (约翰福音 12:1 和合本) 耶稣在伯大尼长大麻风的西门家里坐席的时候，有一个女人拿着一玉瓶至贵的真哪哒香膏来，打破玉瓶，把膏浇在耶稣的头上。 (马可福音 14:3 和合本) 那么耶稣为什么经常驻足伯大尼呢？其实不难发现在耶稣很大程度是因着马大一家以及这里发生的另耶稣欣慰的事情。约翰福音11:5这么记载 耶稣素来爱马大和她妹子并拉撒路。 (约翰福音 11:5 和合本) 马大伺候的事多，心里忙乱，就进前来，说：“主啊，我的妹子留下我一个人伺候，你不在意吗？请吩咐她来帮助我。”耶稣回答说：“马大！马大！你为许多的事思虑烦扰，但是不可少的只有一件；马利亚已经选择那上好的福分，是不能夺去的。”(路加福音 10:40-42 和合本) 她所做的，是尽她所能的；她是为我安葬的事把香膏预先浇在我身上。我实在告诉你们，普天之下，无论在什么地方传这福音，也要述说这女人所做的，以为记念。”(马可福音 14:8-9 和合本) 耶稣在除了静修日这一天以外，每天都有和门徒对话，教训他们。唯独这天静默无声，可想这天的意义是非凡的。在这样的一个世代里，我们里面的灵是否能像马大一家一样值得耶稣所驻足呢？在这样的一个世代里，网络、娱乐、时间的碎片化，我们是否还能拿出像受难周里七分之一的时间来静修呢？我想这两点很值得我们反省，我们忙于服侍为了事工能达到一个新的高度而努力，而把静修、与神独处的时间拿去，是否合适呢？ 学会独处的生活对于每次登山就畅快的我来说，我想更大的意义还是在于在山上我可以远离喧嚣，我们没有时间的碎片，我的生活只有走路、思考，我常常以此为喜乐并以此为爱好。若能长久如此那该多好，很残酷的是，生活并不是只有诗和远方更多是无比的琐碎。我想更重要的是在无比琐碎当中去需求灵的安静吧！这样一来独处就变得很重要，因为独处你不需要去山里，不需要去诗和远方，只需要离开手机和网络，离开朋友的赴约，每天花时间与神独处。我想你也不需要读很多的经文，你甚至只需要说，神，我来了，我就这样安歇在你的脚边。 为什么你想看那些所不该有的事物呢？世界将要过去，情欲也要跟着过去肉体的情欲引诱我们出外游荡，但是时间过去之后，你所带回来的只是一颗不安的良心和散乱的精神罢了！乘兴而去，常是败兴而返，狂欢的夜晚带来了忧愁的早晨——摘自《效法基督》 乘兴而去，常是败兴而返，是多么写实的一句话。独居退休，照料自己，是比行神迹而忽略灵魂更好的事情。并不是号召大家隐居，而是我们需要有安静的时刻，因为此时你和神之间才没有俗世间隔，并且我们每个人都知道，与神没有间隔是我们所追求的。 © 著作權歸http://share18.cc/所有 | 转载请注明出处]]></content>
+      <categories>
+        <category>信仰</category>
+      </categories>
+      <tags>
+        <tag>信仰</tag>
+        <tag>上帝</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[MySql数据库使用基本：一]]></title>
+    <url>%2F2018%2F03%2F29%2FSQL%EF%BC%9A%E4%B8%80%2F</url>
+    <content type="text"><![CDATA[MySql数据库使用一、使用数据库use db_book; 二、删除数据库drop db_book; 三、显示表desc t_bookType; 四、显示创建表命令show create table t_bookType;]]></content>
+      <categories>
+        <category>MySql</category>
+      </categories>
+      <tags>
+        <tag>代码</tag>
+        <tag>MySql</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Python基础语法三：变量引用思想]]></title>
+    <url>%2F2016%2F04%2F29%2FPython%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%EF%BC%9A%E4%B8%89%2F</url>
+    <content type="text"><![CDATA[概述在Python并没有什么指针的概念，不同变量的引用都是指向开辟好的内存(注：Python事实上实现了自己的内存分配系统，它在操作系统内存堆上提供了另外一层抽象）。如果你要将a = 1这个变量初始化，那么就会在内存中开辟一块空间给1，接着再将a = 2这个变量初始话，Python并不会把之前的1这个变量内存空间占用，而是会重新开辟一个a = 2的内存空间，那么问题就来了，如果在开辟一个b = 1的变量那么b会指向哪块内存呢？还是新开辟一块内存呢？答案是仍然使用已经开辟好的1内存空间，也就是说1的内存空间被多个变量引用了，这就是Python的变量引用思想，那么我们来用程序验证下最终结果看看。 程序验证i = 0 n = 3 m = 0 if id(i) &lt;&gt; id(n): print &apos;i和n的内存地址不相同，i：&apos;,id(i),&apos;n:&apos;,id(n) if id(i) == id(m): print &apos;i和m的内存地址相同，i：&apos;,id(i),&apos;m:&apos;,id(m) 输出结果：i和n的内存地址不相同，i： 44398980 n: 44398944i和m的内存地址相同，i： 44398980 m: 44398980 由结果可以看出同时为0的i和m的内存地址是一样的，也就是说都指向的一同一块内存，可以这么理解，i和m就像是同一个商品中的标签i标签和m标签，那么我们再来验证下，如果把某个标签撕掉，分配的内存会消失吗？ i = 0 n = 3 m = 0 if id(i) &lt;&gt; id(n): print &apos;i和n的内存地址不相同，i：&apos;,id(i),&apos;n:&apos;,id(n) if id(i) == id(m): print &apos;i和m的内存地址相同，i：&apos;,id(i),&apos;m:&apos;,id(m) del i print &apos;m的内存地址:&apos;,id(m) 输出结果：i和n的内存地址不相同，i： 22509956 n: 22509920i和m的内存地址相同，i： 22509956 m: 22509956m的内存地址: 22509956 可见撕掉m的标签内存还在，不存在消失的情况。那么问题又来的，卧槽什么时候内存会被回收呢？java有回收机制Python有吗？答案是肯定的，只是回收机制不一样罢了。 Python的内存回收机制简单来说python里回收机制是以引用计数为主，标记-清除和分代收集两种机制为辅，下面主要说下计数。 python里每一个东西都是对象，它们的核心就是一个结构体：PyObject，PyObject是每个对象必有的内容，其中ob_refcnt就是做为引用计数。 typedef struct_object { int ob_refcnt; struct_typeobject *ob_type; }PyObject; 当一个对象有新的引用时，它的ob_refcnt就会增加，当引用它的对象被删除，它的ob_refcnt就会减少。 #define Py_INCREF(op) ((op)-&gt;ob_refcnt++) //增加计数 #define Py_DECREF(op) \ //减少计数 if (--(op)-&gt;ob_refcnt != 0) ; else __Py_Dealloc((PyObject *)(op)) 引用计数为0时，该对象生命就结束了。 引用计数机制的优点 简单 实时性：一旦没有引用，内存就直接释放了。不用像其他机制等到特定时机。实时性还带来一个好处：处理回收内存的时间分摊到了平时。 引用计数机制的缺点 维护引用计数消耗资源 循环引用 总结Python在科学计算和数据处理中用途广泛，而深入底层那些基础理念和算法，都应该感激那些六七十年代由麦卡锡等计算机先贤所作出的计算机科学开创性研究吧！ © 著作權歸http://share18.cc/所有 | 转载请注明出处]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>代码</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[古典古籍研究：《搜神祕覽-船山藏》]]></title>
+    <url>%2F2016%2F04%2F28%2F%E5%8F%A4%E5%85%B8%E5%8F%A4%E7%B1%8D%E7%A0%94%E7%A9%B6%EF%BC%9A%E4%B8%80%2F</url>
+    <content type="text"><![CDATA[原文：五代離亂，兵革紛擾，豪商大賈往往以珍寶委棄深山大澤中，免罹喪亂，不可勝數。綿歷歲月，乃成變怪。今建州浦城縣之船山，一藏是也。山有赤人、赤馬、白人、白馬、牛羊之類，左右羅列，動以千百數，雜陳金寶，長曳數百步，而人未有得之者。山之垠常有字隱隱出於石間，村甿不能辯書者多見。之後有人見而記曰：“船山有一藏，或在南，或在北，有人拾得，富得一國。”至今存焉。胡人過是山，必拜而去。 粗略译文：五代的时候经常出现战争叛乱，战争纷扰，富有的商人往往将珍宝藏在深山大泽中免得珍宝散乱的人不可胜数。经历了一定岁月，珍宝就变成了精怪。现南平市浦城县的船山，有一宝藏。山里面有赤人、赤马、白人、白马、牛羊之类的精怪，左右罗列，数以百计，亲近在珍宝的百步周围，没有人能得到。村里不识字的人在山边常常看得见有字隐藏在石头之间。后来有人看见就记下来了，说：：“船山有一藏，或在南，或在北，有人拾得，富得一國。”到现在这种说法还存在。胡人过这座山时，都要跪拜了才走。 分析：船山应该指的就是浦城县上同村的船山，唐黄巢起义前，浦城的拓岭古道仍是进福建的主要通道，中原战乱，有人迁居福建是很正常的，所以船山宝藏一说有一定可信度，但古船山和今天的船山位置是否一致比较难判断，依据之前昌平王过船山，有一女儿死在船山，后人把船山的某座山峰称为玉女峰，似乎可以确定大致范围，但山脉太长，如今也是不能具体考证了。 船山位置图： © 著作權歸http://share18.cc/所有 | 转载请注明出处]]></content>
+      <categories>
+        <category>古籍</category>
+      </categories>
+      <tags>
+        <tag>文言文</tag>
+        <tag>浦城</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Python基础语法二：条件选择与循环语句]]></title>
+    <url>%2F2016%2F04%2F27%2FPython%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%EF%BC%9A%E4%BA%8C%2F</url>
+    <content type="text"><![CDATA[条件选择 if语句 i = 1 if i &gt; 0 : print &apos;i大于0&apos; if else语句 i = 2 if i &gt; 0 : print &apos;i大于0&apos; else : print &apos;i小于0&apos; if elif语句 i = 3 if i == 4 : print &apos;i等于4&apos; elif i == 3 : print &apos;i等于3&apos; elif i == 2 : print &apos;i等于2&apos; 循环语句 for…in code1： for test in &apos;love&apos; : print &apos;当前字母：&apos; , test code2： num = [&apos;1&apos;,&apos;3&apos;,&apos;5&apos;,&apos;7&apos;] for index in range(len(num)): print &apos;当前数字：&apos; , num[index] 输出结果：当前字母： l当前字母： o当前字母： v当前字母： e while语句 i = 3 while (i &lt; 30): i = i+1 else: print &apos;跳出循环时的数字：&apos;,i 输出结果：30 while中的continue i = 1 while (i &lt; 10): i = i+1 if i%2 &lt;&gt; 0: continue else: print i 输出结果：2 4 6 8 while中的break i = 0 while (i &lt; 5): i += 1 if i &gt; 3: print &apos;大于3跳出，此时i=&apos;,i break else: print &apos;打印小于等于3的数：&apos;,i 输出结果：打印小于等于3的数： 1打印小于等于3的数： 2打印小于等于3的数： 3大于3跳出，此时i= 4 pass语句Python pass是空语句，是为了保持程序结构的完整性。pass 不做任何事情，一般用做占位语句。 for i in range(1,10): if i == 5 : pass print&apos;卧槽pass语句块下面是5吧，没事继续往下打印&apos; print i 输出结果：1234卧槽pass语句块下面是5吧，没事继续往下打印56789 © 著作權歸http://share18.cc/所有 | 转载请注明出处]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>代码</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Python基础语法一：基本函数]]></title>
+    <url>%2F2016%2F04%2F22%2FPython%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%EF%BC%9A%E4%B8%80%2F</url>
+    <content type="text"><![CDATA[print()函数print(&apos;Hello World&apos;) raw_input()函数name=raw_input() #输入数据 print(&apos;这是手动输入的数据：&apos;+name) format()函数# 5是占位,2是小数点后多少位，左右对齐取决于占位 print(format(12.345677,&apos;5.2f&apos;)) 输出结果：12.34 os.system()函数os.system(&quot;pause&quot;) 执行结果：在windows下让命令行窗口暂停 类型转换str = &apos;1&apos; print(int(str)+1) 输出结果：2 id()函数说明：获取变量的内存id即地址 range()函数range()是一个内置函数，它可以生成某个范围内的数字列表。比如说range(1,6)就会生成[1,2,3,4,5]这样一个列表，而range(8)会生成[0,1,2,3,4,5,6,7]这样一个列表。 变量 1、变量指向的是内存地址 2、变量在定义时不需要指定数据类型 © 著作權歸http://share18.cc/所有 | 转载请注明出处]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>代码</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hexo个人博客如何进行文章发布]]></title>
+    <url>%2F2016%2F04%2F21%2FHexo%E5%8F%91%E5%B8%83%2F</url>
+    <content type="text"><![CDATA[打开Git控制台程序D:\Program Files\Git\git-cmd.exe 进入Hexo工作目录cd D:\StudyCode\CWoei.github.io 创建新文章hexo new post postName 为文章加入分类和标签--- title: about date: 2016-04-21 17:13:06 categories: - Hexo tags: - GitHub - 博客 --- 编辑好以后使用命令生成静态文件hexo generate 部署到Githexo deploy © 著作權歸http://share18.cc/所有 | 转载请注明出处]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>博客</tag>
+      </tags>
+  </entry>
+</search>
